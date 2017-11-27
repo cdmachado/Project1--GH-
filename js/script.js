@@ -3,26 +3,17 @@
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 var randomNumber;
-var randomQuote;
 
 function getRandomQuote() {
   randomNumber = Math.floor( Math.random() * 6);
-  randomQuote = quotes[randomNumber];
-  return randomQuote;
+  return quotes[randomNumber];
 }
 
 function printQuote() {
-  var randomQuote2 = getRandomQuote();
-  var quotePrint = '<p class="quote">' + randomQuote2.quote + '</p>';
-  quotePrint += '<p class="source">' + randomQuote2.source;
-  quotePrint += '<span class="citation">' + randomQuote2.citation + '</span>';
-  quotePrint += '<span class="year">' + randomQuote2.year + '</span></p>';
-  return quotePrint;
+  var randomQuote = getRandomQuote();
+  var quotePrint = '<p class="quote">' + randomQuote.quote + '</p>';
+  quotePrint += '<p class="source">' + randomQuote.source;
+  quotePrint += '<span class="citation">' + randomQuote.citation + '</span>';
+  quotePrint += '<span class="year">' + randomQuote.year + '</span></p>';
+  document.getElementById('quote-box').innerHTML = quotePrint;
 }
-
-function print(message) {
-var quoteBox = document.getElementById('quote-box');
-quoteBox.innerHTML = message;
-}
-
-print(printQuote());

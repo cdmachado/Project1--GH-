@@ -3,11 +3,15 @@
 var quotes = [
   {
     quote: 'Success is walking from failure to failure with no loss of enthusiasm.',
-    source: 'Winston Churchill'
+    source: 'Winston Churchill',
+    citation: '',
+    year: ''
   },
   {
     quote: 'Try not to become a man of success. Rather become a man of value.',
-    source: 'Albert Einstein'
+    source: 'Albert Einstein',
+    citation: '',
+    year: ''
   },
   {
     quote: 'You can avoid reality, but you cannot avoid the consequences of avoiding reality.',
@@ -24,6 +28,7 @@ var quotes = [
   {
     quote: 'There are no facts, only interpretations.',
     source: 'Friedrich Nietzsche',
+    citation: '',
     year: 1886
   }
 ];
